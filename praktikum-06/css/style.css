@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(161, 193, 206);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#header{
+    background-color: #5d98af;
+    text-align: center;
+    padding: 10px;
+}
+#header h1{
+    color: #1d3f4e;
+}
+#header blockquote {
+    background-color: #546a74;
+}
+.menu ul {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+.fp::first-letter{
+    font-size: 50px;
+    color:#1d3f4e;
+}
+.koleksi{
+    text-align: center;
+}
+.koleksi img{
+    width: 20%;
+}
+.gambar{
+    text-align: center;
+}
+
+.gambar img{
+    width: 20%;
+}
