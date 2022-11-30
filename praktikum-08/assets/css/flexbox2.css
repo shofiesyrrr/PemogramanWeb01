@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+#main article{
+    flex: 1;
+    order: 1;
+    background: #d4d7da;
+}
+#main nav, 
+#main aside{
+    flex: 0 0 20vw;
+}
+#main nav{
+    background: #859db9;
+    order: 3;
+}
+#main aside{
+    background: rgb(211, 191, 194);
+    order: 2;
+}
+header,footer{
+    background: rgb(86, 114, 131);
+    height: 20vh;
+}
+header, footer, article, nav, aside{
+    padding: 1emZ;
+}
