@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Application chatt</title>
+    </head>
+    <body>
+        <style>
+            #boxmessage {
+                border : 1px solid;
+                width: 30%;
+                height: 500px;
+            }
+
+            #textchtt {
+                width: 322px;
+                margin-top: 479;
+            }
+
+        </style>
+        <div id="boxmessage">
+            <input type="text" id="textchat" placeholder="kirim pesan" onchange="pesan()">
+            <button type="button" id="tombol">kirim</button>
+        </div>
+
+        <script>
+            tombol.addEventListener("click", function pesan(){
+            let message = document.getElementById("boxmessage");
+            const textchtt = document.getElementById("textchtt");
+            const kirim = document.getElementById("tombol");
+
+            boxmessage.innerHTML = textchtt.innerHTML + "<br>" + "pesan : " + textchtt.value;
+            textchtt.value = "";
+            })
+        </script>
+    </body>
+</html>

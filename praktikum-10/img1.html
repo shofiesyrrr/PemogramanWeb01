@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+</head>
+
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---pilih gambar---</option>
+        <option value="gorila">gorila</option>
+        <option value="singa">singa</option>
+        <option value="elang">elang</option>
+    </select>
+    <br />
+    <img alt="gambar" id="image" />
+
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute(
+                    "src",
+                    "https://files.worldwildlife.org/wwfcmsprod/images/Mountain_Gorilla_Silverback_WW22557/story_full_width/36fcoamev0_Mountain_Gorilla_Silverback_WW22557.jpg"
+                );
+                alert("ini gambar gorila")
+            } else if (drop_img == "singa") {
+                image.setAttribute(
+                    "src",
+                    "https://asset-a.grid.id//crop/0x0:0x0/700x465/photo/bobofoto/original/2158_singa.jpg"
+                );
+                alert("ini gambar singa");
+            } else if (drop_img == "elang") {
+                image.setAttribute(
+                    "src",
+                    "https://cdn.idntimes.com/content-images/community/2020/07/adult-stellers-sea-eagle-fishing-05e1243c48696bc7b6323208bcf69ba3_600x400.jpg"
+                );
+                alert("ini gambar gorila")
+            }
+        }
+    </script>
+</body>
+
+</html>
